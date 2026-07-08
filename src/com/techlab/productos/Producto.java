@@ -15,15 +15,36 @@ public class Producto {
     }
 
     // Getters y Setters
-    public int getId() { return id; }
-    public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
-    public double getPrecio() { return precio; }
-    public void setPrecio(double precio) { this.precio = precio; }
-    public int getStock() { return stock; }
-    public void setStock(int stock) { this.stock = stock; }
+    public int getId() {
+        return id; 
+    }
+    
+    public String getNombre() { 
+        return nombre; 
+    }
 
-    // Método para polimorfismo
+    public void setNombre(String nombre) { 
+        this.nombre = nombre; 
+    }
+
+    public double getPrecio() { 
+        return precio; 
+    }
+
+    public void setPrecio(double precio) { 
+        this.precio = precio; 
+    }
+
+    public int getStock() { 
+        return stock; 
+    }
+
+    public void setStock(int stock) { 
+        this.stock = stock; 
+    }
+    
+
+    
     public String mostrarDetalles() {
         return String.format("ID: %d | %s | Precio: $%.2f | Stock: %d u.", id, nombre, precio, stock);
     }
